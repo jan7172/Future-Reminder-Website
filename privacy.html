@@ -7,13 +7,8 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="icon.png" />
   <style>
-    .privacy-page {
-      padding: 100px 24px 80px;
-    }
-    .privacy-content {
-      max-width: 720px;
-      margin: 0 auto;
-    }
+    .privacy-page { padding: 100px 24px 80px; }
+    .privacy-content { max-width: 720px; margin: 0 auto; }
     .privacy-content h1 {
       font-family: var(--font-display);
       font-size: clamp(2rem, 4vw, 3rem);
@@ -68,19 +63,6 @@
       font-size: 1rem;
       margin: 0;
     }
-    .lang-divider {
-      border: none;
-      border-top: 2px solid var(--divider);
-      margin: 64px 0;
-    }
-    .lang-label {
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 32px;
-    }
     .back-link {
       display: inline-flex;
       align-items: center;
@@ -91,6 +73,8 @@
       text-decoration: none;
     }
     .back-link:hover { color: var(--accent-hover); }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
   </style>
 </head>
 <body>
@@ -104,8 +88,8 @@
     </a>
     <div class="nav-controls">
       <div class="lang-switch">
-        <button class="lang-btn active" onclick="document.getElementById('en').scrollIntoView({behavior:'smooth'})">EN</button>
-        <button class="lang-btn" onclick="document.getElementById('de').scrollIntoView({behavior:'smooth'})">DE</button>
+        <button class="lang-btn" id="btnEN" onclick="setPrivacyLang('en')">EN</button>
+        <button class="lang-btn" id="btnDE" onclick="setPrivacyLang('de')">DE</button>
       </div>
       <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -131,28 +115,22 @@
   <div class="privacy-content">
 
     <!-- ── English ── -->
-    <div id="en">
+    <div id="section-en" class="lang-section">
       <a href="index.html" class="back-link">← Back to future-reminder.app</a>
-      <p class="lang-label">English</p>
-
       <h1>Privacy Policy</h1>
       <p class="meta">Last updated: March 2026 · future-reminder.app</p>
-
       <div class="highlight-block">
         <p>🔒 Future Reminder does not collect, store, or share any personal data. Everything stays on your device.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Overview</h2>
         <p>Future Reminder is a location-based reminder app for iPhone. This Privacy Policy explains how the app handles your data when you use it.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Data We Collect</h2>
         <p>Future Reminder does <strong>not</strong> collect any personal data. The app does not use analytics, advertising SDKs, crash reporting services, or any third-party frameworks that could collect data.</p>
         <p>All data you enter — including reminder titles, notes, and location information — is stored exclusively on your device using Apple's SwiftData framework.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Location Data</h2>
         <p>Future Reminder requests access to your location in order to trigger reminders when you arrive at a place you have set.</p>
@@ -163,60 +141,48 @@
           <li>You can revoke location access at any time in iOS Settings → Future Reminder → Location.</li>
         </ul>
       </div>
-
       <div class="privacy-block">
         <h2>Notifications</h2>
-        <p>The app uses Apple's local notification system (UNUserNotificationCenter) to alert you when you arrive at a reminder location. Notifications are generated and delivered entirely on your device. No notification content or metadata is sent to external servers.</p>
+        <p>The app uses Apple's local notification system to alert you when you arrive at a reminder location. Notifications are generated and delivered entirely on your device. No notification content or metadata is sent to external servers.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Third-Party Services</h2>
         <p>Future Reminder does not integrate any third-party SDKs, analytics tools, advertising networks, crash reporters, or cloud services. The app uses only Apple's native iOS frameworks: SwiftUI, SwiftData, CoreLocation, MapKit, and UserNotifications.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Children's Privacy</h2>
         <p>Future Reminder does not knowingly collect data from anyone, including children under the age of 13.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Changes to This Policy</h2>
         <p>If this Privacy Policy changes in the future, the updated version will be published at this URL. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Contact</h2>
-        <p>If you have any questions about this Privacy Policy, visit <a href="https://future-reminder.app">future-reminder.app</a> or reach out via the App Store support link.</p>
+        <p>If you have any questions, visit <a href="https://future-reminder.app">future-reminder.app</a> or reach out via the App Store support link.</p>
       </div>
     </div>
 
-    <hr class="lang-divider" />
-
     <!-- ── German ── -->
-    <div id="de">
-      <p class="lang-label">Deutsch</p>
-
+    <div id="section-de" class="lang-section">
+      <a href="index.html" class="back-link">← Zurück zu future-reminder.app</a>
       <h1>Datenschutzerklärung</h1>
       <p class="meta">Zuletzt aktualisiert: März 2026 · future-reminder.app</p>
-
       <div class="highlight-block">
         <p>🔒 Future Reminder erfasst, speichert oder teilt keine personenbezogenen Daten. Alles verbleibt auf deinem Gerät.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Überblick</h2>
         <p>Future Reminder ist eine standortbasierte Erinnerungs-App für iPhone. Diese Datenschutzerklärung erläutert, wie die App mit deinen Daten umgeht.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Erhobene Daten</h2>
-        <p>Future Reminder erhebt <strong>keine</strong> personenbezogenen Daten. Die App verwendet keine Analyse-Tools, Werbe-SDKs, Absturzberichte oder Drittanbieter-Frameworks, die Daten erfassen könnten.</p>
-        <p>Alle Daten, die du eingibst – einschließlich Erinnerungstitel, Notizen und Standortinformationen – werden ausschließlich auf deinem Gerät mit Apples SwiftData-Framework gespeichert.</p>
+        <p>Future Reminder erhebt <strong>keine</strong> personenbezogenen Daten. Die App verwendet keine Analyse-Tools, Werbe-SDKs, Absturzberichte oder Drittanbieter-Frameworks.</p>
+        <p>Alle Daten die du eingibst — einschließlich Erinnerungstitel, Notizen und Standortinformationen — werden ausschließlich auf deinem Gerät mit Apples SwiftData-Framework gespeichert.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Standortdaten</h2>
-        <p>Future Reminder fordert Zugriff auf deinen Standort, um Erinnerungen auszulösen, wenn du einen von dir festgelegten Ort erreichst.</p>
+        <p>Future Reminder fordert Zugriff auf deinen Standort, um Erinnerungen auszulösen, wenn du einen festgelegten Ort erreichst.</p>
         <ul>
           <li>Standortdaten werden ausschließlich auf deinem Gerät über Apples CoreLocation-Framework verarbeitet.</li>
           <li>Dein Standort wird niemals an einen Server oder Dritte übermittelt.</li>
@@ -224,30 +190,25 @@
           <li>Du kannst den Standortzugriff jederzeit unter iOS-Einstellungen → Future Reminder → Standort widerrufen.</li>
         </ul>
       </div>
-
       <div class="privacy-block">
         <h2>Benachrichtigungen</h2>
-        <p>Die App verwendet Apples lokales Benachrichtigungssystem (UNUserNotificationCenter), um dich zu informieren, wenn du einen Erinnerungsort erreichst. Benachrichtigungen werden vollständig auf deinem Gerät erzeugt und zugestellt. Es werden keine Benachrichtigungsinhalte oder Metadaten an externe Server gesendet.</p>
+        <p>Die App verwendet Apples lokales Benachrichtigungssystem, um dich zu informieren wenn du einen Erinnerungsort erreichst. Benachrichtigungen werden vollständig auf deinem Gerät erzeugt und zugestellt. Es werden keine Inhalte oder Metadaten an externe Server gesendet.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Drittanbieterdienste</h2>
         <p>Future Reminder integriert keine Drittanbieter-SDKs, Analyse-Tools, Werbenetzwerke, Absturzreporter oder Cloud-Dienste. Die App verwendet ausschließlich native iOS-Frameworks von Apple: SwiftUI, SwiftData, CoreLocation, MapKit und UserNotifications.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Datenschutz für Kinder</h2>
         <p>Future Reminder erhebt wissentlich keine Daten von Personen, einschließlich Kindern unter 13 Jahren.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Änderungen dieser Erklärung</h2>
-        <p>Sollte sich diese Datenschutzerklärung in Zukunft ändern, wird die aktualisierte Version unter dieser URL veröffentlicht. Die weitere Nutzung der App nach Änderungen gilt als Zustimmung zur aktualisierten Erklärung.</p>
+        <p>Sollte sich diese Datenschutzerklärung ändern, wird die aktualisierte Version unter dieser URL veröffentlicht. Die weitere Nutzung der App nach Änderungen gilt als Zustimmung.</p>
       </div>
-
       <div class="privacy-block">
         <h2>Kontakt</h2>
-        <p>Bei Fragen zu dieser Datenschutzerklärung besuche <a href="https://future-reminder.app">future-reminder.app</a> oder nutze den Support-Link im App Store.</p>
+        <p>Bei Fragen besuche <a href="https://future-reminder.app">future-reminder.app</a> oder nutze den Support-Link im App Store.</p>
       </div>
     </div>
 
@@ -259,25 +220,52 @@
   <div class="footer-inner">
     <span class="footer-copy">© 2026 Future Reminder</span>
     <div class="footer-links">
-      <span>Made with ♥ by Jan Bauer</span>
-      <a href="privacy.html">Privacy Policy</a>
+      <span id="footer-made">Made with ♥ by Jan Bauer</span>
+      <a href="https://github.com/jan7172/Future-Reminder" target="_blank" rel="noopener">GitHub</a>
+      <a href="privacy.html" id="footer-privacy">Privacy Policy</a>
     </div>
   </div>
 </footer>
 
 <script>
-  // Theme init
-  const saved = localStorage.getItem('fr_theme');
+  // ── Theme ──
+  const savedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = saved || (prefersDark ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', theme);
+  document.documentElement.setAttribute('data-theme', savedTheme || (prefersDark ? 'dark' : 'light'));
 
   document.getElementById('themeToggle').addEventListener('click', () => {
     const current = document.documentElement.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('fr_theme', next);
+    localStorage.setItem('theme', next);
   });
+
+  // ── Language ──
+  function setPrivacyLang(lang) {
+    document.getElementById('section-en').classList.toggle('active', lang === 'en');
+    document.getElementById('section-de').classList.toggle('active', lang === 'de');
+    document.getElementById('btnEN').classList.toggle('active', lang === 'en');
+    document.getElementById('btnDE').classList.toggle('active', lang === 'de');
+    document.documentElement.lang = lang;
+    localStorage.setItem('lang', lang);
+
+    // Footer text
+    document.getElementById('footer-made').textContent = lang === 'de'
+      ? 'Gemacht mit ♥ von Jan Bauer'
+      : 'Made with ♥ by Jan Bauer';
+    document.getElementById('footer-privacy').textContent = lang === 'de'
+      ? 'Datenschutzerklärung'
+      : 'Privacy Policy';
+  }
+
+  // Read saved language from localStorage — same key as main site
+  const saved = localStorage.getItem('lang');
+  const browser = navigator.language || 'en';
+  const lang = (saved && ['en', 'de'].includes(saved))
+    ? saved
+    : (browser.startsWith('de') ? 'de' : 'en');
+
+  setPrivacyLang(lang);
 </script>
 </body>
 </html>

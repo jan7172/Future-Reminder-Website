@@ -1,12 +1,16 @@
 /* ============================================
    Future Reminder — app.js
    Language detection, i18n, theme toggle
+   Storage key: "lang" (Future Reminder language)
    ============================================ */
 
-// ── Load translations ──
+const LANG_KEY = 'lang';
+const THEME_KEY = 'theme';
+
 let translations = {};
 let currentLang = 'en';
 
+// ── Load translations ──
 async function loadTranslations() {
   const res = await fetch('translations.json');
   translations = await res.json();
@@ -14,9 +18,8 @@ async function loadTranslations() {
 
 // ── Detect language ──
 function detectLanguage() {
-  const saved = localStorage.getItem('fr_lang');
+  const saved = localStorage.getItem(LANG_KEY);
   if (saved && ['en', 'de'].includes(saved)) return saved;
-
   const browser = navigator.language || navigator.userLanguage || 'en';
   if (browser.startsWith('de')) return 'de';
   return 'en';
@@ -28,7 +31,6 @@ function applyTranslations(lang) {
   const t = translations[lang];
   if (!t) return;
 
-  // Update all [data-i18n] elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     const value = getNestedValue(t, key);
@@ -41,16 +43,12 @@ function applyTranslations(lang) {
     }
   });
 
-  // Update lang buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
-  // Update html lang
   document.documentElement.lang = lang;
-
-  // Save preference
-  localStorage.setItem('fr_lang', lang);
+  localStorage.setItem(LANG_KEY, lang);
 }
 
 function getNestedValue(obj, path) {
@@ -64,7 +62,7 @@ function switchLang(lang) {
 
 // ── Theme ──
 function initTheme() {
-  const saved = localStorage.getItem('fr_theme');
+  const saved = localStorage.getItem(THEME_KEY);
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const theme = saved || (prefersDark ? 'dark' : 'light');
   setTheme(theme);
@@ -72,7 +70,7 @@ function initTheme() {
 
 function setTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('fr_theme', theme);
+  localStorage.setItem(THEME_KEY, theme);
 }
 
 function toggleTheme() {
@@ -85,9 +83,7 @@ function initScrollAnimations() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, i * 80);
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
         observer.unobserve(entry.target);
       }
     });
@@ -109,20 +105,15 @@ function initNavScroll() {
 // ── Init ──
 document.addEventListener('DOMContentLoaded', async () => {
   initTheme();
-
   await loadTranslations();
-
   const lang = detectLanguage();
   applyTranslations(lang);
-
   initScrollAnimations();
   initNavScroll();
 
-  // Lang buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => switchLang(btn.dataset.lang));
   });
 
-  // Theme toggle
   document.querySelector('.theme-toggle')?.addEventListener('click', toggleTheme);
 });
