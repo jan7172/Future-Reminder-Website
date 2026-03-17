@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Future Reminder — location-based reminders for iPhone. Get notified when you arrive, not just at a fixed time." />
+  <meta property="og:title" content="Future Reminder" />
+  <meta property="og:description" content="Reminders that find you. Not when the clock says so — when you arrive." />
+  <meta property="og:image" content="https://future-reminder.app/og-image.png" />
+  <meta property="og:url" content="https://future-reminder.app" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Future Reminder — Reminders that find you.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="icon.png" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">📍</div>
+      Future Reminder
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#features" data-i18n="nav.features">Features</a></li>
+      <li><a href="#privacy-section" data-i18n="nav.privacy">Privacy</a></li>
+      <li><a href="#download" data-i18n="nav.download">Download</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="hero-app-icon">📍</div>
+  <h1 data-i18n="hero.tagline">Reminders that find you.</h1>
+  <p class="hero-subtitle" data-i18n="hero.subtitle">Not when the clock says so — when you arrive.</p>
+  <div class="hero-ctas">
+    <a href="#" class="btn-primary" data-i18n="hero.cta">
+      Download on the App Store
+    </a>
+    <a href="#" class="btn-secondary" data-i18n="hero.cta_testflight">
+      Join Beta on TestFlight
+    </a>
+  </div>
+</section>
+
+<!-- ── Intro ── -->
+<section class="intro">
+  <div class="container">
+    <div class="intro-text fade-in">
+      <p class="section-label">Future Reminder</p>
+      <h2 class="section-heading" data-i18n="intro.heading">Think different about reminders.</h2>
+      <p class="section-body" data-i18n="intro.body">
+        Most reminder apps work with fixed times. But in real life, you don't think "buy milk at 6pm" — you think "buy milk when I'm at the supermarket." Future Reminder works the way your brain does.
+      </p>
+    </div>
+    <div class="intro-visual fade-in">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="mock-title">Future Reminder</div>
+          <div class="mock-reminder">
+            <div class="mock-dot"></div>
+            <div>
+              <div class="mock-text">Buy milk & eggs</div>
+              <div class="mock-sub">📍 Walmart</div>
+            </div>
+          </div>
+          <div class="mock-reminder">
+            <div class="mock-dot"></div>
+            <div>
+              <div class="mock-text">Print Q1 report</div>
+              <div class="mock-sub">📍 Office</div>
+            </div>
+          </div>
+          <div class="mock-reminder">
+            <div class="mock-dot"></div>
+            <div>
+              <div class="mock-text">Grab protein shake</div>
+              <div class="mock-sub">📍 Gym</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ── -->
+<section class="features" id="features">
+  <div class="container">
+    <p class="section-label fade-in">Features</p>
+    <h2 class="section-heading fade-in" data-i18n="features.heading">Everything you need. Nothing you don't.</h2>
+    <div class="features-grid">
+
+      <div class="feature-card fade-in">
+        <div class="feature-icon">📍</div>
+        <h3 class="feature-title" data-i18n="features.items.0.title">Location Triggers</h3>
+        <p class="feature-desc" data-i18n="features.items.0.description">Set any address or point of interest as the trigger for your reminder. Arrive — get notified. Simple.</p>
+      </div>
+
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🔔</div>
+        <h3 class="feature-title" data-i18n="features.items.1.title">Automatic Notifications</h3>
+        <p class="feature-desc" data-i18n="features.items.1.description">No tapping, no checking. Future Reminder fires your notification the moment you step into range.</p>
+      </div>
+
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🔒</div>
+        <h3 class="feature-title" data-i18n="features.items.2.title">100% Private</h3>
+        <p class="feature-desc" data-i18n="features.items.2.description">All data lives exclusively on your device. No accounts, no cloud, no tracking. Ever.</p>
+      </div>
+
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🎚️</div>
+        <h3 class="feature-title" data-i18n="features.items.3.title">Adjustable Radius</h3>
+        <p class="feature-desc" data-i18n="features.items.3.description">Set your trigger zone from 50 to 500 meters. Perfect for a single shop or an entire district.</p>
+      </div>
+
+      <div class="feature-card fade-in">
+        <div class="feature-icon">✅</div>
+        <h3 class="feature-title" data-i18n="features.items.4.title">Clean & Simple</h3>
+        <p class="feature-desc" data-i18n="features.items.4.description">Create a reminder in seconds. No clutter, no setup, no learning curve.</p>
+      </div>
+
+      <div class="feature-card fade-in">
+        <div class="feature-icon">📱</div>
+        <h3 class="feature-title" data-i18n="features.items.5.title">iPhone Native</h3>
+        <p class="feature-desc" data-i18n="features.items.5.description">Built with SwiftUI and CoreLocation. Fast, reliable, and deeply integrated with iOS.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── How it works ── -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="fade-in">
+      <p class="section-label">How it works</p>
+      <h2 class="section-heading" data-i18n="how.heading">How it works.</h2>
+    </div>
+    <div class="steps">
+
+      <div class="step fade-in">
+        <div class="step-number" data-i18n="how.steps.0.number">01</div>
+        <div class="step-content">
+          <h3 data-i18n="how.steps.0.title">Create a reminder</h3>
+          <p data-i18n="how.steps.0.body">Add a title and an optional note — takes about five seconds.</p>
+        </div>
+      </div>
+
+      <div class="step fade-in">
+        <div class="step-number" data-i18n="how.steps.1.number">02</div>
+        <div class="step-content">
+          <h3 data-i18n="how.steps.1.title">Set a location</h3>
+          <p data-i18n="how.steps.1.body">Search for any address, shop, or place. Tap to confirm.</p>
+        </div>
+      </div>
+
+      <div class="step fade-in">
+        <div class="step-number" data-i18n="how.steps.2.number">03</div>
+        <div class="step-content">
+          <h3 data-i18n="how.steps.2.title">Arrive & done</h3>
+          <p data-i18n="how.steps.2.body">When you enter the area, your reminder appears. Right place, right time.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Privacy Section ── -->
+<section class="privacy-section" id="privacy-section">
+  <div class="container fade-in">
+    <p class="section-label">Privacy</p>
+    <h2 class="section-heading" data-i18n="privacy_section.heading">Privacy first. Always.</h2>
+    <p class="section-body" data-i18n="privacy_section.body">
+      Future Reminder never transmits your location or your reminders anywhere. No server, no analytics, no third-party SDKs. Your data is yours.
+    </p>
+    <a href="privacy.html" data-i18n="privacy_section.link">Read the full Privacy Policy</a>
+  </div>
+</section>
+
+<!-- ── Download ── -->
+<section class="download" id="download">
+  <div class="container fade-in">
+    <p class="section-label">Download</p>
+    <h2 class="section-heading" data-i18n="download.heading">Ready when you are.</h2>
+    <p class="section-body" data-i18n="download.body">Download Future Reminder for free on the App Store.</p>
+    <div class="hero-ctas" style="margin-top: 32px;">
+      <a href="#" class="btn-primary" data-i18n="download.cta">Download on the App Store</a>
+      <a href="#" class="btn-secondary" data-i18n="download.cta_testflight">Join Beta on TestFlight</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy" data-i18n="footer.copyright">© 2026 Future Reminder</span>
+    <div class="footer-links">
+      <span data-i18n="footer.made">Made with ♥ by Jan Bauer</span>
+      <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
