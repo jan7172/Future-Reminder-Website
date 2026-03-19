@@ -10,7 +10,8 @@
       "tagline": "Reminders that find you.",
       "subtitle": "Not when the clock says so — when you arrive.",
       "cta": "Download on the App Store",
-      "cta_testflight": "Join Beta on TestFlight"
+      "cta_testflight": "Join Beta on TestFlight",
+      "review_notice": "Currently in Apple review — available in a few days. Try TestFlight in the meantime!"
     },
     "intro": {
       "heading": "Think different about reminders.",
@@ -62,7 +63,14 @@
       "heading": "Ready when you are.",
       "body": "Download Future Reminder for free on the App Store.",
       "cta": "Download on the App Store",
-      "cta_testflight": "Join Beta on TestFlight"
+      "cta_testflight": "Join Beta on TestFlight",
+      "review_notice": "Currently in Apple review — available in a few days. Try TestFlight in the meantime!"
+    },
+    "modal": {
+      "title": "Coming Soon",
+      "body": "The app is currently in Apple review and will be available in a few days. Try TestFlight in the meantime!",
+      "testflight": "Join TestFlight Beta",
+      "close": "Close"
     },
     "footer": {
       "made": "Made with \u2665 by Jan Bauer",
@@ -81,7 +89,8 @@
       "tagline": "Erinnerungen, die dich finden.",
       "subtitle": "Nicht wenn die Uhr es sagt \u2014 sondern wenn du ankommst.",
       "cta": "Im App Store laden",
-      "cta_testflight": "Beta auf TestFlight"
+      "cta_testflight": "Beta auf TestFlight",
+      "review_notice": "Derzeit in der Apple-Pr\u00FCfung \u2014 in wenigen Tagen verf\u00FCgbar. Probiere in der Zwischenzeit TestFlight!"
     },
     "intro": {
       "heading": "Erinnerungen, neu gedacht.",
@@ -133,7 +142,14 @@
       "heading": "Bereit wenn du es bist.",
       "body": "Lade Future Reminder kostenlos im App Store.",
       "cta": "Im App Store laden",
-      "cta_testflight": "Beta auf TestFlight"
+      "cta_testflight": "Beta auf TestFlight",
+      "review_notice": "Derzeit in der Apple-Pr\u00FCfung \u2014 in wenigen Tagen verf\u00FCgbar. Probiere in der Zwischenzeit TestFlight!"
+    },
+    "modal": {
+      "title": "In K\u00FCrze verf\u00FCgbar",
+      "body": "Die App befindet sich derzeit in der Apple-Pr\u00FCfung und wird in wenigen Tagen verf\u00FCgbar sein. Probiere in der Zwischenzeit TestFlight!",
+      "testflight": "TestFlight Beta",
+      "close": "Schlie\u00DFen"
     },
     "footer": {
       "made": "Gemacht mit \u2665 von Jan Bauer",

@@ -11,6 +11,18 @@
   <title>Future Reminder — Reminders that find you.</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="icon.png" />
+  <style>
+    .review-notice {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-top: 12px;
+      opacity: 0.8;
+      text-align: center;
+    }
+    .review-notice::before {
+      content: '⏳ ';
+    }
+  </style>
 </head>
 <body>
 
@@ -74,6 +86,7 @@
     <a href="#" class="btn-primary" data-i18n="hero.cta">Download on the App Store</a>
     <a href="https://testflight.apple.com/join/drbdnbf8" target="_blank" rel="noopener" class="btn-secondary" data-i18n="hero.cta_testflight">Join Beta on TestFlight</a>
   </div>
+  <p class="review-notice" data-i18n="hero.review_notice">Currently in Apple review — available in a few days. Try TestFlight in the meantime!</p>
 </section>
 
 <!-- ── Intro ── -->
@@ -208,6 +221,7 @@
       <a href="#" class="btn-primary" data-i18n="download.cta">Download on the App Store</a>
       <a href="https://testflight.apple.com/join/drbdnbf8" target="_blank" rel="noopener" class="btn-secondary" data-i18n="download.cta_testflight">Join Beta on TestFlight</a>
     </div>
+    <p class="review-notice" data-i18n="download.review_notice">Currently in Apple review — available in a few days. Try TestFlight in the meantime!</p>
   </div>
 </section>
 
