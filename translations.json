@@ -79,41 +79,35 @@
     }
   },
   "de": {
-    "nav": {
-      "features": "Funktionen",
-      "privacy": "Datenschutz",
-      "download": "Download",
-      "opensource": "Open Source"
-    },
     "hero": {
       "tagline": "Erinnerungen, die dich finden.",
-      "subtitle": "Nicht wenn die Uhr es sagt \u2014 sondern wenn du ankommst.",
+      "subtitle": "Nicht wenn die Uhr es sagt — sondern wenn du ankommst.",
       "cta": "Im App Store laden",
       "cta_testflight": "Beta auf TestFlight",
-      "review_notice": "Derzeit in der Apple-Pr\u00FCfung \u2014 in wenigen Tagen verf\u00FCgbar. Probiere in der Zwischenzeit TestFlight!"
+      "review_notice": "Derzeit in der Apple-Prüfung — in wenigen Tagen verfügbar. Probiere bis dahin TestFlight!"
     },
     "intro": {
       "heading": "Erinnerungen, neu gedacht.",
-      "body": "Die meisten Erinnerungs-Apps arbeiten mit festen Uhrzeiten. Aber im Alltag denkt man nicht 'Milch kaufen um 18 Uhr' \u2014 man denkt 'Milch kaufen, wenn ich im Supermarkt bin.' Future Reminder funktioniert so, wie dein Gehirn denkt."
+      "body": "Die meisten Erinnerungs-Apps arbeiten mit festen Uhrzeiten. Aber im Alltag denkt man nicht „Milch kaufen um 18 Uhr“ — man denkt „Milch kaufen, wenn ich im Supermarkt bin.“ Future Reminder funktioniert so, wie du denkst."
     },
     "features": {
-      "heading": "Alles was du brauchst. Nichts was du nicht brauchst.",
+      "heading": "Alles, was du brauchst. Nichts, was du nicht brauchst.",
       "items": [
         {
-          "title": "Orts-Ausl\u00F6ser",
-          "description": "Lege jede Adresse oder jeden Ort als Ausl\u00F6ser fest. Ankommen \u2014 benachrichtigt werden. So einfach."
+          "title": "Ortsbasierte Erinnerungen",
+          "description": "Lege jede Adresse oder jeden Ort für deine Erinnerung fest. Ankommen — erinnert werden. So einfach."
         },
         {
           "title": "Automatische Benachrichtigungen",
-          "description": "Kein Tippen, kein Nachschauen. Future Reminder sendet die Benachrichtigung genau dann, wenn du den Bereich betrittst."
+          "description": "Kein Tippen, kein Nachschauen. Future Reminder erinnert dich genau dann, wenn du ankommst."
         },
         {
-          "title": "100% Privat",
-          "description": "Alle Daten bleiben ausschlie\u00DFlich auf deinem Ger\u00E4t. Keine Accounts, keine Cloud, kein Tracking. Niemals."
+          "title": "100 % Privat",
+          "description": "Alle Daten bleiben ausschließlich auf deinem Gerät. Keine Accounts, keine Cloud, kein Tracking. Niemals."
         },
         {
           "title": "Einstellbarer Radius",
-          "description": "W\u00E4hle deinen Ausl\u00F6sebereich zwischen 50 und 500 Metern. Perfekt f\u00FCr ein einzelnes Gesch\u00E4ft oder ein ganzes Viertel."
+          "description": "Wähle deinen Umkreis zwischen 50 und 500 Metern. Perfekt für ein einzelnes Geschäft oder ein ganzes Viertel."
         },
         {
           "title": "Klar & Einfach",
@@ -121,40 +115,52 @@
         },
         {
           "title": "iPhone Native",
-          "description": "Gebaut mit SwiftUI und CoreLocation. Schnell, zuverl\u00E4ssig und tief in iOS integriert."
+          "description": "Gebaut mit SwiftUI und CoreLocation. Schnell, zuverlässig und tief in iOS integriert."
         }
       ]
     },
     "how": {
       "heading": "So funktioniert es.",
       "steps": [
-        { "number": "01", "title": "Erinnerung erstellen", "body": "Titel und optionale Notiz hinzuf\u00FCgen \u2014 dauert etwa f\u00FCnf Sekunden." },
-        { "number": "02", "title": "Ort festlegen", "body": "Adresse, Gesch\u00E4ft oder Ort suchen. Antippen zum Best\u00E4tigen." },
-        { "number": "03", "title": "Ankommen & fertig", "body": "Wenn du den Bereich betrittst, erscheint deine Erinnerung. Richtiger Ort, richtige Zeit." }
+        {
+          "number": "01",
+          "title": "Erinnerung erstellen",
+          "body": "Titel und optionale Notiz hinzufügen — dauert etwa fünf Sekunden."
+        },
+        {
+          "number": "02",
+          "title": "Ort festlegen",
+          "body": "Adresse, Geschäft oder Ort suchen. Antippen zum Bestätigen."
+        },
+        {
+          "number": "03",
+          "title": "Ankommen & fertig",
+          "body": "Sobald du ankommst, erscheint deine Erinnerung. Richtiger Ort, richtige Zeit."
+        }
       ]
     },
     "privacy_section": {
       "heading": "Datenschutz zuerst. Immer.",
-      "body": "Future Reminder \u00FCbertr\u00E4gt deinen Standort oder deine Erinnerungen niemals irgendwohin. Kein Server, keine Analyse, keine Drittanbieter-SDKs. Deine Daten geh\u00F6ren dir.",
-      "link": "Vollst\u00E4ndige Datenschutzerkl\u00E4rung lesen"
+      "body": "Future Reminder überträgt deinen Standort oder deine Erinnerungen niemals irgendwohin. Kein Server, keine Analyse, keine Drittanbieter-SDKs. Deine Daten gehören dir.",
+      "link": "Vollständige Datenschutzerklärung lesen"
     },
     "download": {
-      "heading": "Bereit wenn du es bist.",
+      "heading": "Bereit, wenn du es bist.",
       "body": "Lade Future Reminder kostenlos im App Store.",
       "cta": "Im App Store laden",
       "cta_testflight": "Beta auf TestFlight",
-      "review_notice": "Derzeit in der Apple-Pr\u00FCfung \u2014 in wenigen Tagen verf\u00FCgbar. Probiere in der Zwischenzeit TestFlight!"
+      "review_notice": "Derzeit in der Apple-Prüfung — in wenigen Tagen verfügbar. Probiere bis dahin TestFlight!"
     },
     "modal": {
-      "title": "In K\u00FCrze verf\u00FCgbar",
-      "body": "Die App befindet sich derzeit in der Apple-Pr\u00FCfung und wird in wenigen Tagen verf\u00FCgbar sein. Probiere in der Zwischenzeit TestFlight!",
+      "title": "In Kürze verfügbar",
+      "body": "Die App befindet sich derzeit in der Apple-Prüfung und wird in wenigen Tagen verfügbar sein. Probiere bis dahin TestFlight!",
       "testflight": "TestFlight Beta",
-      "close": "Schlie\u00DFen"
+      "close": "Schließen"
     },
     "footer": {
-      "made": "Gemacht mit \u2665 von Jan Bauer",
-      "privacy": "Datenschutzerkl\u00E4rung",
-      "copyright": "\u00A9 2026 Future Reminder"
+      "made": "Entwickelt mit \u2665 von Jan Bauer",
+      "privacy": "Datenschutzerklärung",
+      "copyright": "© 2026 Future Reminder"
     }
   }
 }
