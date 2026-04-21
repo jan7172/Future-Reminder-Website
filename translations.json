@@ -8,10 +8,20 @@
     },
     "hero": {
       "tagline": "Reminders that find you.",
-      "subtitle": "Not when the clock says so — when you arrive.",
+      "subtitle": "Not when the clock says so — when you arrive. Or leave.",
       "cta": "Download on the App Store",
       "cta_testflight": "Join Beta on TestFlight",
       "review_notice": "Currently in Apple review — available in a few days. Try TestFlight in the meantime!"
+    },
+    "mock": {
+      "reminder1": "Buy milk & eggs",
+      "reminder1_loc": "\uD83D\uDCCD Walmart",
+      "reminder2": "Print Q1 report",
+      "reminder2_loc": "\uD83D\uDCCD Office",
+      "reminder3": "Grab protein shake",
+      "reminder3_loc": "\uD83D\uDEAA Leaving Gym",
+      "reminder4": "Pick up prescription",
+      "reminder4_loc": "\uD83D\uDCCD Any Pharmacy"
     },
     "intro": {
       "heading": "Think different about reminders.",
@@ -25,24 +35,36 @@
           "description": "Set any address or point of interest as the trigger for your reminder. Arrive — get notified. Simple."
         },
         {
-          "title": "Automatic Notifications",
-          "description": "No tapping, no checking. Future Reminder fires your notification the moment you step into range."
+          "title": "Arrival & Departure",
+          "description": "Get notified when you arrive at a location — or when you leave. Choose per reminder: arrival, departure, or both."
         },
         {
-          "title": "100% Private",
-          "description": "All data lives exclusively on your device. No accounts, no cloud, no tracking. Ever."
+          "title": "Category Reminders",
+          "description": "Remind yourself at every pharmacy, supermarket, or gas station in an area — not just one specific address. Future Reminder monitors up to 20 nearby locations at once."
+        },
+        {
+          "title": "Time Rules",
+          "description": "Optionally restrict a reminder to a date range or a specific day — not before a date, not after, or only on that day. Location-based, but date-aware."
+        },
+        {
+          "title": "Snooze",
+          "description": "Long-press any notification to snooze it for 30 minutes or 1 hour — without opening the app."
         },
         {
           "title": "Adjustable Radius",
           "description": "Set your trigger zone from 50 to 500 meters. Perfect for a single shop or an entire district."
         },
         {
-          "title": "Clean & Simple",
-          "description": "Create a reminder in seconds. No clutter, no setup, no learning curve."
+          "title": "100% Private",
+          "description": "All data lives exclusively on your device. No accounts, no cloud, no tracking. Ever."
         },
         {
           "title": "iPhone Native",
           "description": "Built with SwiftUI and CoreLocation. Fast, reliable, and deeply integrated with iOS."
+        },
+        {
+          "title": "Open Source",
+          "description": "The full source code is publicly available on GitHub. Transparent, auditable, and community-driven."
         }
       ]
     },
@@ -50,8 +72,8 @@
       "heading": "How it works.",
       "steps": [
         { "number": "01", "title": "Create a reminder", "body": "Add a title and an optional note — takes about five seconds." },
-        { "number": "02", "title": "Set a location", "body": "Search for any address, shop, or place. Tap to confirm." },
-        { "number": "03", "title": "Arrive & done", "body": "When you enter the area, your reminder appears. Right place, right time." }
+        { "number": "02", "title": "Set a location & trigger", "body": "Search for any address, shop, or place. Choose arrival, departure, or both. Optionally add a time rule." },
+        { "number": "03", "title": "Done — automatically", "body": "When you enter or leave the area, your reminder appears. If needed, snooze directly from the notification." }
       ]
     },
     "privacy_section": {
@@ -79,43 +101,71 @@
     }
   },
   "de": {
+    "nav": {
+      "features": "Features",
+      "privacy": "Datenschutz",
+      "download": "Download",
+      "opensource": "Open Source"
+    },
     "hero": {
       "tagline": "Erinnerungen, die dich finden.",
-      "subtitle": "Nicht wenn die Uhr es sagt — sondern wenn du ankommst.",
+      "subtitle": "Nicht wenn die Uhr es sagt \u2014 sondern wenn du ankommst. Oder gehst.",
       "cta": "Im App Store laden",
       "cta_testflight": "Beta auf TestFlight",
-      "review_notice": "Derzeit in der Apple-Prüfung — in wenigen Tagen verfügbar. Probiere bis dahin TestFlight!"
+      "review_notice": "Derzeit in der Apple-Pr\u00fcfung \u2014 in wenigen Tagen verf\u00fcgbar. Probiere bis dahin TestFlight!"
+    },
+    "mock": {
+      "reminder1": "Milch & Eier kaufen",
+      "reminder1_loc": "\uD83D\uDCCD REWE",
+      "reminder2": "Q1-Bericht drucken",
+      "reminder2_loc": "\uD83D\uDCCD B\u00fcro",
+      "reminder3": "Proteinshake holen",
+      "reminder3_loc": "\uD83D\uDEAA Gym verlassen",
+      "reminder4": "Rezept abholen",
+      "reminder4_loc": "\uD83D\uDCCD N\u00e4chste Apotheke"
     },
     "intro": {
       "heading": "Erinnerungen, neu gedacht.",
-      "body": "Die meisten Erinnerungs-Apps arbeiten mit festen Uhrzeiten. Aber im Alltag denkt man nicht „Milch kaufen um 18 Uhr“ — man denkt „Milch kaufen, wenn ich im Supermarkt bin.“ Future Reminder funktioniert so, wie du denkst."
+      "body": "Die meisten Erinnerungs-Apps arbeiten mit festen Uhrzeiten. Aber im Alltag denkt man nicht an Milch kaufen um 18 Uhr \u2014 man denkt: Milch kaufen, wenn ich im Supermarkt bin. Future Reminder funktioniert so, wie du denkst."
     },
     "features": {
       "heading": "Alles, was du brauchst. Nichts, was du nicht brauchst.",
       "items": [
         {
-          "title": "Ortsbasierte Erinnerungen",
-          "description": "Lege jede Adresse oder jeden Ort für deine Erinnerung fest. Ankommen — erinnert werden. So einfach."
+          "title": "Ortsbasierte Ausl\u00f6ser",
+          "description": "Lege jede Adresse oder jeden Ort als Ausl\u00f6ser fest. Ankommen \u2014 erinnert werden. So einfach."
         },
         {
-          "title": "Automatische Benachrichtigungen",
-          "description": "Kein Tippen, kein Nachschauen. Future Reminder erinnert dich genau dann, wenn du ankommst."
+          "title": "Ankommen & Verlassen",
+          "description": "Werde erinnert, wenn du ankommst \u2014 oder wenn du einen Ort verl\u00e4sst. Pro Erinnerung w\u00e4hlbar: Ankunft, Verlassen oder beides."
         },
         {
-          "title": "100 % Privat",
-          "description": "Alle Daten bleiben ausschließlich auf deinem Gerät. Keine Accounts, keine Cloud, kein Tracking. Niemals."
+          "title": "Kategorie-Erinnerungen",
+          "description": "Erinnere dich an jeder Apotheke, jedem Supermarkt oder jeder Tankstelle in einem Gebiet \u2014 nicht nur an einer bestimmten Adresse. Future Reminder \u00fcberwacht bis zu 20 Orte gleichzeitig."
+        },
+        {
+          "title": "Zeitregeln",
+          "description": "Schr\u00e4nke eine Erinnerung optional auf einen Zeitraum oder einen bestimmten Tag ein \u2014 nicht vor einem Datum, nicht danach oder nur genau an diesem Tag."
+        },
+        {
+          "title": "Snooze",
+          "description": "Benachrichtigung lang dr\u00fccken, um sie um 30 Minuten oder 1 Stunde zu verschieben \u2014 ohne die App zu \u00f6ffnen."
         },
         {
           "title": "Einstellbarer Radius",
-          "description": "Wähle deinen Umkreis zwischen 50 und 500 Metern. Perfekt für ein einzelnes Geschäft oder ein ganzes Viertel."
+          "description": "W\u00e4hle deinen Ausl\u00f6sebereich zwischen 50 und 500 Metern. Perfekt f\u00fcr ein einzelnes Gesch\u00e4ft oder ein ganzes Viertel."
         },
         {
-          "title": "Klar & Einfach",
-          "description": "Erinnerung in Sekunden erstellen. Kein Aufwand, keine Einrichtung, keine Lernkurve."
+          "title": "100 % Privat",
+          "description": "Alle Daten bleiben ausschlie\u00dflich auf deinem Ger\u00e4t. Keine Accounts, keine Cloud, kein Tracking. Niemals."
         },
         {
           "title": "iPhone Native",
-          "description": "Gebaut mit SwiftUI und CoreLocation. Schnell, zuverlässig und tief in iOS integriert."
+          "description": "Gebaut mit SwiftUI und CoreLocation. Schnell, zuverl\u00e4ssig und tief in iOS integriert."
+        },
+        {
+          "title": "Open Source",
+          "description": "Der vollst\u00e4ndige Quellcode ist \u00f6ffentlich auf GitHub verf\u00fcgbar. Transparent, pr\u00fcfbar und community-getrieben."
         }
       ]
     },
@@ -125,42 +175,42 @@
         {
           "number": "01",
           "title": "Erinnerung erstellen",
-          "body": "Titel und optionale Notiz hinzufügen — dauert etwa fünf Sekunden."
+          "body": "Titel und optionale Notiz hinzuf\u00fcgen \u2014 dauert etwa f\u00fcnf Sekunden."
         },
         {
           "number": "02",
-          "title": "Ort festlegen",
-          "body": "Adresse, Geschäft oder Ort suchen. Antippen zum Bestätigen."
+          "title": "Ort & Ausl\u00f6ser festlegen",
+          "body": "Adresse, Gesch\u00e4ft oder Ort suchen. Bei Ankunft, beim Verlassen oder bei beidem ausw\u00e4hlen. Optional eine Zeitregel hinzuf\u00fcgen."
         },
         {
           "number": "03",
-          "title": "Ankommen & fertig",
-          "body": "Sobald du ankommst, erscheint deine Erinnerung. Richtiger Ort, richtige Zeit."
+          "title": "Fertig \u2014 automatisch",
+          "body": "Sobald du ankommst oder gehst, erscheint die Erinnerung. Bei Bedarf direkt aus der Benachrichtigung snoozen."
         }
       ]
     },
     "privacy_section": {
       "heading": "Datenschutz zuerst. Immer.",
-      "body": "Future Reminder überträgt deinen Standort oder deine Erinnerungen niemals irgendwohin. Kein Server, keine Analyse, keine Drittanbieter-SDKs. Deine Daten gehören dir.",
-      "link": "Vollständige Datenschutzerklärung lesen"
+      "body": "Future Reminder \u00fcbertr\u00e4gt deinen Standort oder deine Erinnerungen niemals irgendwohin. Kein Server, keine Analyse, keine Drittanbieter-SDKs. Deine Daten geh\u00f6ren dir.",
+      "link": "Vollst\u00e4ndige Datenschutzerkl\u00e4rung lesen"
     },
     "download": {
       "heading": "Bereit, wenn du es bist.",
       "body": "Lade Future Reminder kostenlos im App Store.",
       "cta": "Im App Store laden",
       "cta_testflight": "Beta auf TestFlight",
-      "review_notice": "Derzeit in der Apple-Prüfung — in wenigen Tagen verfügbar. Probiere bis dahin TestFlight!"
+      "review_notice": "Derzeit in der Apple-Pr\u00fcfung \u2014 in wenigen Tagen verf\u00fcgbar. Probiere bis dahin TestFlight!"
     },
     "modal": {
-      "title": "In Kürze verfügbar",
-      "body": "Die App befindet sich derzeit in der Apple-Prüfung und wird in wenigen Tagen verfügbar sein. Probiere bis dahin TestFlight!",
+      "title": "In K\u00fcrze verf\u00fcgbar",
+      "body": "Die App befindet sich derzeit in der Apple-Pr\u00fcfung und wird in wenigen Tagen verf\u00fcgbar sein. Probiere bis dahin TestFlight!",
       "testflight": "TestFlight Beta",
-      "close": "Schließen"
+      "close": "Schlie\u00dfen"
     },
     "footer": {
       "made": "Entwickelt mit \u2665 von Jan Bauer",
-      "privacy": "Datenschutzerklärung",
-      "copyright": "© 2026 Future Reminder"
+      "privacy": "Datenschutzerkl\u00e4rung",
+      "copyright": "\u00a9 2026 Future Reminder"
     }
   }
 }
